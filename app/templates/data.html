@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table>
+    <thead>
+        <td>
+            Date
+        </td>
+        <td>
+            Amount
+        </td>
+        <td>
+            Label
+        </td>
+    </thead>
+    <tbody>
+        {% for debit in debits %}
+        <tr>
+            <td>{{ debit.date }}</td>
+            <td>{{ debit.amount }}</td>
+            <td>{{ debit.label }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

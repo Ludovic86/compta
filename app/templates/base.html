@@ -1,10 +1,17 @@
 <html>
     <head>
       <title>Compta V0</title>
+      <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
     </head>
     <body>
-        Compta: <a href="/index">Home</a>
+        <a href="/index">Home</a>
         <a href="/import">Import Data</a>
+        <a href="/data">See Data</a>
         <hr>
         {% block content %}{% endblock %}
     </body>
